@@ -1,12 +1,12 @@
 # Request Decompressor Module for Caddy
 
-This Caddy module provides middleware for automatically decompressing incoming HTTP requests that use various compression methods (gzip, brotli, zstd).
+This Caddy module provides middleware for automatically decompressing incoming HTTP requests that use various compression methods (gzip, bzip2, zstd).
 
 ## Features
 
 - Supports multiple compression formats:
   - gzip
-  - br (Brotli)
+  - bzip2
   - zstd
 - Automatically detects and decompresses requests based on Content-Encoding header
 - Returns 400 Bad Request for malformed compressed data
