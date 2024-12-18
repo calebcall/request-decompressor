@@ -6,7 +6,7 @@ This Caddy module provides middleware for automatically decompressing incoming H
 
 - Supports multiple compression formats:
   - gzip
-  - bzip2
+  - bzip2 (bz2)
   - zstd
 - Automatically detects and decompresses requests based on Content-Encoding header
 - Returns 400 Bad Request for malformed compressed data
