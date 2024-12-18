@@ -1,4 +1,4 @@
-module github.com/calebcall/request-decompressor
+module github.com/blockjoy/request-decompressor
 
 go 1.21
 
