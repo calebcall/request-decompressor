@@ -18,7 +18,7 @@ This Caddy module provides middleware for automatically decompressing incoming H
 To build Caddy with this module:
 
 ```bash
-xcaddy build --with github.com/calebcall/request-decompressor
+xcaddy build --with github.com/blockjoy/request-decompressor
 ```
 
 ## Usage
