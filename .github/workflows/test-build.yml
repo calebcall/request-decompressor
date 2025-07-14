@@ -1,0 +1,27 @@
+name: Test Caddy Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.24.2'
+    
+    - name: Install xcaddy
+      run: go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
+    
+    - name: Test build with xcaddy
+      run: xcaddy build --with github.com/calebcall/request-decompressor
+    
+
