@@ -4,7 +4,7 @@ go 1.25.1
 
 require (
 	github.com/caddyserver/caddy/v2 v2.11.4
-	github.com/klauspost/compress v1.18.6
+	github.com/klauspost/compress v1.18.7
 	go.uber.org/zap v1.28.0
 )
 
